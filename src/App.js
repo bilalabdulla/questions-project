@@ -1,17 +1,17 @@
 import './App.css';
-import BookContextProvider from './contexts/BookContext';
 import Navbar from './components/Navbar';
-import BookList from './components/BookList';
-import BookForm from './components/BookForm';
+import QuestionContextProvider from './contexts/QuestionContext';
+import QuestionList from './components/QuestionList';
+import QuestionForm from './components/QuestionForm';
 
 function App() {
   return (
     <div className="App">
-      <BookContextProvider>
+      <QuestionContextProvider>
         <Navbar />
-        <BookList />
-        <BookForm />
-      </BookContextProvider>
+        <QuestionList />
+        <QuestionForm />
+      </QuestionContextProvider>
     </div>
   );
 }
